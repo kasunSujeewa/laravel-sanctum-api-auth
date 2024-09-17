@@ -1,0 +1,29 @@
+{
+    "name": "coolcode/authapi",
+    "description": "api authentication using sanctum",
+    "type": "package",
+    "require": {
+        "laravel/sanctum": "4.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Coolcode\\Authapi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Coolcode\\Authapi\\ApiAuthServiceProvider",
+                "Coolcode\\Authapi\\ApiResponseServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Kasun Ranasinghe"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
