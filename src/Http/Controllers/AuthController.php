@@ -39,7 +39,7 @@ class AuthController extends BaseController
 
     public function logout(Request $request)
     {
-        $request->user('api')->currentAccessToken()->delete();
+        $request->user('sanctum')->currentAccessToken()->delete();
 
         return  Response::apiSuccess([],Constant::LOGOUT_SUCCESS_MESSAGE);
     }
