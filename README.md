@@ -67,7 +67,7 @@ Authenticates the user and issues a Bearer token for future API requests. The to
 
 ### 3. Logout
 
-**Endpoint:** `/api/user/logout`  
+**Endpoint:** `/api/logout`  
 **Method:** `POST`  
 **Headers:**  
 - `Accept: application/json`  
